@@ -7,6 +7,10 @@ li{
 a{
     text-decoration: none;
 }
+.safe{
+    width:1090px;margin:0 auto;
+    }
+    
 .header{
     height: 650px;
     background: url("../img/background2.jpg");
@@ -73,23 +77,58 @@ a{
 .forget a:nth-of-type(2){
     float: right;
 }
-// .foot{
-//     height: 300px;
-//     background-color: #1a1a1a;
-//     text-align: center;
-// }
-// .foot ul{
-//     margin-bottom: 28px;
-//     // margin-top: 31px;
-// }
-// .foot ul li{
-//     float: left;
-//     margin-right: 80px;
-//     color: #ffffff;
-// }
-// .foot ul li img{
-//     margin-right: 28px;
-// }
+
+
+.foot{
+    overflow: hidden;
+    height: 300px;
+    background-color: #1a1a1a;
+}
+.foot1 .miaoshu{
+    margin: 80px 0 28px 75px;
+    overflow: hidden;
+}
+.foot1 .miaoshu li{
+    float: left;
+    line-height: 50px;
+    font-size: 15px;
+    color: #ffffff;
+    margin-right: 80px;
+
+}
+.foot1 .miaoshu li img{
+    height: 50px;
+    // float: left;
+    margin-right: 29px;
+}
+
+
+.foot1 .lianjie{
+    text-align: center;
+    border-top: 1px solid #2c2c2c;
+}
+.foot1 .lianjie ul:nth-of-type(1){
+    margin-top: 16px;
+    margin-left: 203px;
+}
+.foot1 .lianjie ul:nth-of-type(2){
+    float: left;
+    margin-top: 26px;
+    margin-left: 102px;
+}
+.foot1 .lianjie ul:nth-of-type(1) li,.foot1 .lianjie ul:nth-of-type(2) li{
+    float: left;
+}
+.foot1 .lianjie ul:nth-of-type(1) li a,.foot1 .lianjie ul:nth-of-type(1) li span,.foot1 .lianjie ul:nth-of-type(2) li a,.foot1 .lianjie ul:nth-of-type(2) li span{
+    font-size: 11px;
+    color: #a6a6a6;
+}
+.foot1 .lianjie ul:nth-of-type(1) li span,.foot1 .lianjie ul:nth-of-type(2) li span{
+    margin-left: 20px;
+    margin-right: 19px;
+}
+
+
 
 
 

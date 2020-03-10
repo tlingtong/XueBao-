@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/productList.css">
 </head>
 <body>
-    
-    <!-- -----------------头部header------------------- -->
     <header>
         <div class="safe">
             <p>中国大陆暴雪官方授权周边商城</p>
             <ul>
                 <li>
-                    <a href="login.html">登录</a><span>|</span>
+                    <a href="#">登录</a><span>|</span>
                 </li>
                 <li>
-                    <a href="reg.html">注册</a><span>|</span>
+                    <a href="#">注册</a><span>|</span>
                 </li>
                 <li>
                     <a href="#">客户服务</a><strong>∧</strong><span>|</span>
@@ -64,7 +62,7 @@
                               <img src="img/洗护.png" alt="">
                               <p>洗护</p>
                             </li>
-                            <li>
+                            <li id="list1">
                                 <img src="img/抱枕.png" alt="">
                                 <p>抱枕</p>
                             </li>
@@ -247,142 +245,91 @@
 
 
 
-    <!-------------------图banner--------------------->
-    <div class="banner">
-        <div></div>
-    </div>
-        
-     
-
-      <!-------------------列表list--------------------->
-  <div class="list">
-    <div class="list safe">
-        <ul>
-            <li>
-                <img src="img/list1.png" alt="游戏图标">
-                <div>魔兽世界</div>
-            </li>
-            <li>
-                <img src="img/list2.png" alt="游戏图标">
-                <div>守望先锋</div>
-            </li>
-            <li>
-                <img src="img/list3.png" alt="游戏图标">
-                <div>炉石传说</div>
-            </li>
-            <li>
-                <img src="img/list4.png" alt="游戏图标">
-                <div>暗黑破坏神</div>
-            </li>
-            <li>
-                <img src="img/list5.png" alt="游戏图标">
-                <div>星际争霸2</div>
-            </li>
-            <li>
-                <img src="img/list6.png" alt="游戏图标">
-                <div>风暴英雄</div>
-            </li>
-            <li>
-                <img src="img/list7.png" alt="游戏图标">
-                <div>魔兽争霸3</div>
-            </li>
-            <li>
-                <img src="img/list8.png" alt="游戏图标">
-                <div>暴雪游戏</div>
-            </li>
-        </ul>
-    </div>
-  </div>
+    <!--------------商品列表  proList 具体内容通过js创建添加----------------->
+    <div class="store safe">
+        <ul id = "proList">   
     
 
+        </ul>
+    
+    </div>
+    
+  
+
+    <!-- -------------------------------底部客户服务-------------------------------- -->
+
+    <div class="fuwu">
+        <div class="fuwu1 safe">
+            <ul>
+                <li class="li1">
+                    <h3>客户服务</h3>
+                    <div class="fuwu2">
+                      <div>
+                          <img src="img/prolist1.png" alt=""><br>
+                          在线客服
+                      </div>
+                      <div>
+                         <img src="img/prolist2.png" alt=""><br>
+                         用户反馈
+                       </div>
+                    </div>
+                </li>
+
+                <li class="li2">
+                    <h3>网易暴雪周边商城</h3>
+                    <p>是网易旗下运营暴雪游戏周边商品的官方购物商场，秉承网易一罐的严谨态度，力求帮消费者引进、设计、制造优质的暴雪周边商品</p>
+                    <div>
+                        关注我们<img src="img/prolist3.gif" alt=""><img src="img/prolist4.gif" alt="">
+                    </div>
+                </li>
+
+                <li class="li3">
+                    <div>
+                        <img src="img/prolist5.gif" alt="">
+                        <img src="img/prolist6.gif" alt="">
+                    </div>
+                </li>
+            </ul>
+        </div> 
+    </div>
 
 
-
-      <!-------------------人气热销 hot--------------------->
-
-      <div class="hot">
-        <div class="hot safe">
-            <div class="title">人气热销</div>
-            <div class="hot-main">
-                <div class="left-main">
-                    <img alt="主图" src="img/主图.jpg">
-                    <div class="left">预售 魔兽世界编年史同人画集 时光之沙漏</div>
-                </div>
-                <div class="right-main1">
-                    <img alt="辅图" src="img/辅图1.jpg">
-                    <div class="other">魔兽世界 吉安娜法阵无线充电器</div>
-                </div>
-                <div class="right-main2">
-                    <img alt="辅图" src="img/辅图2.jpg">
-                    <div class="other">守望先锋 英雄集结鼠标垫（新版）</div>
-                </div>
-                <div class="right-main3">
-                    <img alt="辅图" src="img/辅图3.jpg">
-                    <div class="other">破坏球 毛绒抱枕 守望先锋</div>
-                </div>
-                <div class="right-main4">
-                    <img alt="辅图" src="img/辅图4.jpg">
-                    <div class="other">魔兽世界 艾泽拉斯新春红包套装</div>
-                </div>
+<!-- -------------------------------底部 友情链接-------------------------------- -->
+    <div class="foot">
+        <div class="foot1 safe">
+            <ul class="miaoshu">
+                <li><img src="img/login1.png" alt="">官方正版周边</li>
+                <li><img src="img/login2.png" alt="">7天无忧退货</li>
+                <li><img src="img/login3.png" alt="">满88元免邮费</li>
+                <li><img src="img/login4.png" alt="">网易自营电商</li>
+            </ul>
+            <div class="lianjie">
+                <ul>
+                    <li><a href="">公司简介</a><span>|</span></li>
+                    <li><a href="">规则中心</a><span>|</span></li>
+                    <li><a href="">售后服务</a><span>|</span></li>
+                    <li><a href="">配送与验收</a><span>|</span></li>
+                    <li><a href="">商务合作</a><span>|</span></li>
+                    <li><a href="">相关法律</a><span>|</span></li>
+                    <li><a href="">联系我们</a><span>|</span></li>
+                    <li><a href="">加入我们</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">食物经营许可证</a><span>|</span></li>
+                    <li><a href="">出版物经营许可证</a><span>|</span></li>
+                    <li><a href="">营业执照</a><span>|</span></li>
+                    <li><a href="">网易公司版权所有 © 1997-2019 浙出发滨零字第0108号 统一社会信用代码:91330108691700232G</a></li>
+                </ul>
             </div>
         </div>
-      </div>
+    </div>
 
 
 
 
 
-        <!-------------------最新周边 news--------------------->
 
-      <div class="news">
-            <div class="news safe">
-                <div class="newstitle">最新周边</div>
-                <div class="new-main">
-                    <div class="main1">
-                        <span class="prev"></span>
-                        <a class="new1">
-                            <img class="img" alt="图片" src="img/news主图1.jpg58854fa2-4c1e-4609-b3c1-b9bbe3a7e8e3">
-                            <img class="icon" src="img/news辅图1.png" alt="游戏图标">
-                            <span class="name">守望先锋 源氏飞镖冰箱贴</span>
-                            <span class="desc" title="是时候展现英雄真正实力">是时候展现英雄真正实力</span>
-                            <span class="price">￥59.00</span>
-                        </a>
-                        <a class="new2">
-                            <img class="img" alt="图片" src="img/news主图2.jpge052fc8c-de6d-4e72-bbc3-513e90f10bc6">
-                            <img class="icon" src="img/news辅图1.png" alt="游戏图标">
-                            <span class="name">守望先锋 D.Va可动人偶 手办模型</span>
-                            <span class="desc" title="D.Va爱你哟">D.Va爱你哟</span>
-                            <span class="price">￥427.00</span>
-                        </a>
-                        <a class="new3">
-                                <img class="img" alt="图片" src="img/news主图3.jpg51822e54-f68b-4eca-b575-0111a10626ee">
-                                <img class="icon" src="img/news辅图1.png" alt="游戏图标">
-                                <span class="name">守望先锋 禅雅塔可动人偶手办</span>
-                                <span class="desc" title="本我不拘于形">本我不拘于形</span>
-                                <span class="price">￥489.00</span>
-                        </a>
-                        <a class="new4">
-                                <img class="img" alt="图片" src="img/news主图4.jpgc332e53d-5b0d-42a8-8493-13b24c9f21b3">
-                                <img class="icon" src="img/news辅图2.png" alt="游戏图标">
-                                <span class="name">炉石传说 艺术设定集</span>
-                                <span class="desc" title="谁想来一场华丽的冒险？">谁想来一场华丽的冒险？</span>
-                                <span class="price">￥268.00</span>
-                        </a>
-                        <span class="next"></span>
-                    </div>
-                </div>
-            </div>
-          </div>
-       
-
-
-        <!-------------------主模块 ：居家生活--------------------->
-          <!-- <main>
-              <div class="safe"></div>
-          </main> -->
-
-
-          <script src="libs/jquery.js"></script>
-          <script src="js/index.js"></script>
+    <script src="libs/jquery.js"></script>
+    <script src="js/productList.js"></script>
 </body>
 </html>
