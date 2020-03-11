@@ -1,0 +1,336 @@
+*{
+    margin: 0; padding: 0;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+img{
+    vertical-align:middle;border:none;
+}
+
+body{
+    background: url("../img/background6.png");
+}
+
+/*----------------安全区  safe--------------------*/
+.safe{
+    width:1090px;margin:0 auto;
+    }
+
+
+/*----------------头部header--------------------*/
+header{
+    background-color: #011e47;
+    height: 30px;width: 100%;
+}
+header p{
+    font-size: 11px;
+    color: #7f93a9;
+    line-height: 30px;
+    float: left;
+}
+header ul{
+    float: right;
+    position: relative;
+}
+header ul li{
+    float:left;
+    color: #7f93a9;
+}
+header ul li a{
+    font-size: 11px; 
+    line-height: 30px;
+    padding-left: 9px;
+    padding-right: 10px;
+    color: #7f93a9;
+}
+
+header ul li div{
+    display: none;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+}
+header ul li div a{
+    display: block;
+    text-align: center;
+    background: #001a38;
+    border:1px solid #374254;
+}
+header ul li div a:hover{
+    color: #ffffff;
+}
+header ul li:hover div{
+    display: block;
+}
+
+header ul li span{
+    font-size: 14px;
+}
+header ul li strong{
+    margin-right:10px;
+}
+
+
+
+
+
+
+/*----------------搜索  search--------------------*/
+.search{
+    background:url("../img/background.png")no-repeat -30px;
+    height: 150px;
+     line-height: 150px;
+}
+.search .tu{
+    float: left;
+   
+}
+.search .sou{
+    float: right;
+}
+.search .sou input{
+    width: 270px;
+    border: none;
+    border-bottom: 1px solid #33669b;
+    color:  #33669b;                               /*问题，此处应用placeholder，默认字体颜色不生效*/
+    padding-left:5px ;
+    background:none;
+    outline: none;
+}
+.search .sou .gou{margin-left: 20px;}
+
+
+
+/*----------------导航nav--------------------*/
+nav{
+    height: 40px;
+    background-color: #002146;
+    position: relative;
+}
+nav .yiji li{
+    float: left;
+    margin-right: 79px;
+      line-height: 40px;
+}
+nav .yiji li a{
+    font-size: 13px;
+    color: #cfd2d7;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+nav .yiji li a:hover{
+    color: #00aeff;
+    border-bottom: 1px solid #00aeff;
+}
+nav .yiji li div{
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #0b1524;
+    opacity: 0.8;
+    width: 100%;
+    z-index: 1;
+}
+nav .yiji li div ul{
+  width: 1064px;
+  overflow: hidden;
+   margin-left: 200px;
+   margin-top: 33px;
+}
+nav .yiji li div ul li{
+    margin-right: 98px;
+    text-align: center;
+    margin-bottom: 23px;
+}
+nav .yiji li div ul li img{
+    width: 34px;
+    height: 34px;
+}
+nav .yiji li div ul li p{
+    font-size: 12px;
+    color: #cfd2d7;
+    font-weight: bold;
+}
+nav .yiji li div ul li p:hover{
+    color: #00aeff;
+}
+nav .yiji li:hover div{
+    display: block;
+}
+
+
+/*--------------------商品详情--------------------*/
+.detail1{
+    height: 500px;
+    overflow: hidden;
+}
+.detail1 #deleft,.detail1 #deright{
+    background-color: #fff;
+    margin-top: 30px;
+}
+.detail1 #deleft{
+    float: left;
+    margin-right: 180px;
+    margin-left: 30px;
+    width: 380px;
+    height: 400px;
+}
+#deleft img{
+    width: 380px;
+    height: 400px;
+}
+.detail1 #deright{
+    float: left;
+    width: 470px;
+    height: 400px;
+    
+}
+
+.detail1 #deright .price1{
+    margin-top: 45px;
+    height: 85px;
+    width: 470px;
+    background-color: #f5f6f6;
+    margin-bottom: 10px;
+}
+.detail1 #deright .price1 h4{
+    color: #999999;
+    line-height: 32px;
+    font-size: 12px;
+    margin-left: 15px;
+}
+.detail1 #deright .price1 h4 span{
+    color: #ff0000;
+    font-size: 20px;
+}
+.detail1 #deright .xian{
+   height: 1px;
+   width: 470px;
+    border-top:1px dashed #999999;;
+}
+.detail1 #deright p{
+    margin-top: 85px;
+    margin-left: 15px;
+  
+}
+.detail1 #deright p span{
+    display: inline-block;
+    margin: 0 10px;
+    width: 26px;
+    height: 30px;
+    background-color: #ededed;
+    color:#bababa ;
+    text-align: center;
+    line-height: 30px;
+}
+
+.detail1 #deright p #num{
+    border: none;
+    text-align: center;
+    width: 48px;
+    background-color: none;
+}
+
+.detail1 #deright #btn{
+    margin-top: 25px;
+    width: 168px;
+    height: 40px;
+    border: none;
+    background: #00aeff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 8px;
+    margin-left: 15px;
+}
+
+
+.foot{
+    overflow: hidden;
+    height: 300px;
+    background-color: #1a1a1a;
+}
+.foot1 .miaoshu{
+    margin: 80px 0 28px 75px;
+    overflow: hidden;
+}
+.foot1 .miaoshu li{
+    float: left;
+    line-height: 50px;
+    font-size: 15px;
+    color: #ffffff;
+    margin-right: 80px;
+
+}
+.foot1 .miaoshu li img{
+    height: 50px;
+    // float: left;
+    margin-right: 29px;
+}
+
+
+.foot1 .lianjie{
+    text-align: center;
+    border-top: 1px solid #2c2c2c;
+}
+.foot1 .lianjie ul:nth-of-type(1){
+    margin-top: 16px;
+    margin-left: 203px;
+}
+.foot1 .lianjie ul:nth-of-type(2){
+    float: left;
+    margin-top: 26px;
+    margin-left: 102px;
+}
+.foot1 .lianjie ul:nth-of-type(1) li,.foot1 .lianjie ul:nth-of-type(2) li{
+    float: left;
+}
+.foot1 .lianjie ul:nth-of-type(1) li a,.foot1 .lianjie ul:nth-of-type(1) li span,.foot1 .lianjie ul:nth-of-type(2) li a,.foot1 .lianjie ul:nth-of-type(2) li span{
+    font-size: 11px;
+    color: #a6a6a6;
+}
+.foot1 .lianjie ul:nth-of-type(1) li span,.foot1 .lianjie ul:nth-of-type(2) li span{
+    margin-left: 20px;
+    margin-right: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

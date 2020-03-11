@@ -24,7 +24,7 @@ $.get("http://jx.xuzhixiang.top/ap/api/productlist.php",{
         // 分别将取到的信息添加到str中
         str += `
         <li>
-            <img src="${data.data[i].pimg}">  
+            <a href="detail.html?id=${data.data[i].pid}"><img src="${data.data[i].pimg}"></a>
             <p>${data.data[i].pdesc}</p>
             <p>商城价：<span>${data.data[i].pprice}</span></p>
         </li>
@@ -45,7 +45,7 @@ list.onclick = function(){
 }
 
 
-
+// 点击列表，跳转到详情页
 
 
 

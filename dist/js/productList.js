@@ -21,7 +21,7 @@ $.get("http://jx.xuzhixiang.top/ap/api/productlist.php", {
   for (var i in data.data) // data.data[i]
   {
     // 分别将取到的信息添加到str中
-    str += "\n        <li>\n            <img src=\"".concat(data.data[i].pimg, "\">  \n            <p>").concat(data.data[i].pdesc, "</p>\n            <p>\u5546\u57CE\u4EF7\uFF1A<span>").concat(data.data[i].pprice, "</span></p>\n        </li>\n        ");
+    str += "\n        <li>\n            <a href=\"detail.html?id=".concat(data.data[i].pid, "\"><img src=\"").concat(data.data[i].pimg, "\"></a>\n            <p>").concat(data.data[i].pdesc, "</p>\n            <p>\u5546\u57CE\u4EF7\uFF1A<span>").concat(data.data[i].pprice, "</span></p>\n        </li>\n        ");
   }
 
   ;
@@ -34,4 +34,4 @@ var list = document.getElementById("list");
 
 list.onclick = function () {
   location.href = "productList.html";
-};
+}; // 点击列表，跳转到详情页

@@ -15,4 +15,3 @@ list.onclick = function(){                     //加点击事件，跳转页面
 
 
 
-
