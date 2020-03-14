@@ -1,5 +1,6 @@
 "use strict";
 
+// 实现了通过接口把购物车数据取出，渲染到购物车页面，同时结算添加到购物车中的商品  
 //   查询购物车中的信息，获取数据
 $.get("http://jx.xuzhixiang.top/ap/api/cart-list.php", {
   id: "32951" //参数为id
@@ -27,4 +28,9 @@ $.get("http://jx.xuzhixiang.top/ap/api/cart-list.php", {
   }); // console.log(count);                               //264  计算结果无误  
 
   $(".totalPrice").text(count); //将count值赋给页面中的总价
+}); // //同样的点击页面的二级导航，分别也会转到对应的路径，此处只展示了一个
+
+$(".list").click(function () {
+  //获取其中的二级导航元素
+  location.href = "productList.html"; //加点击事件，跳转页面
 });

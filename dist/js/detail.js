@@ -1,6 +1,10 @@
 "use strict";
 
-var pid = location.search.slice(4); //  console.log(pid);                    //输出此路径的商品id，通过这个id来获取商品详细信息
+// 实现了在列表页点击商品进入对应详情页，通过接口取对应的数据渲染到详情页中
+// 并且在详情页中用户可选择商品的数量来加入购物车，点击购物车将商品加入到购物车中，最后跳转购物车页面
+var pid = location.search.slice(4); //从地址栏来获取详情页的id
+//  console.log(pid);                    //输出此路径的商品id，通过这个id来获取商品详细信息
+// 利用接口取商品详情的数据，再将取得的数据渲染到页面中
 
 $.get("http://jx.xuzhixiang.top/ap/api/detail.php", {
   id: pid //参数id，将pid传进去，得到data
@@ -41,16 +45,23 @@ $.get("http://jx.xuzhixiang.top/ap/api/detail.php", {
   //     console.log(data);
   // })
   // 点击加入购物车，点击的同时，利用接口将商品信息、加入个数等数据添加到购物车中，最后跳转购物车页面
+  // 此处要先设置点击事件，在点击加入购物车后，才利用添加购物车数据，将用户想要的商品存在购物车中。
 
   $("#btn").click(function () {
     // 添加购物车数据   添加成功即可
     $.get("http://jx.xuzhixiang.top/ap/api/add-product.php", {
       uid: "32951",
+      //利用接口，参数用户uid,商品pid，加入商品的数量pnum
       pid: data.data.pid,
       pnum: $("#num").val()
     }).then(function (data) {
-      console.log(data);
+      console.log(data); //加入成功
     });
-    location.href = "shopping.html";
+    location.href = "shopping.html"; //最后跳转到购物车页面
+  }); // //同样的点击页面的二级导航，分别也会转到对应的路径，此处只展示了一个
+
+  $(".list").click(function () {
+    //获取其中的二级导航元素
+    location.href = "productList.html"; //加点击事件，跳转页面
   });
 });

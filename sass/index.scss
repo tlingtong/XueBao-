@@ -16,7 +16,6 @@ body{
     background:url("../img/background.png");
 }
 
-
 /*----------------安全区  safe--------------------*/
 .safe{
     width:1090px;margin:0 auto;
@@ -310,7 +309,28 @@ transition:2s; */                                 /*遗留问题，没有设置�
 .news{
   
     margin-top: 60px;
-    /* overflow: hidden; */
+    position: relative;
+//    overflow: hidden;
+//    width: 1200px;
+    height: 425px;
+}
+.news .btns span{
+    position: absolute;
+    display: inline-block;
+    width: 41px;
+    height: 49px;
+    border-radius: 5px;
+    top: 225px;
+    font-size: 28px;
+    float: left;
+}
+.news .btns span.prev{
+    background: url("../img/left.png")no-repeat 0 0;
+    left: -50px;
+}
+.news .btns span.next{
+    background: url("../img/right.png")no-repeat 0 0;
+    right: -50px;
 }
 
 .news .newstitle{
@@ -322,31 +342,19 @@ transition:2s; */                                 /*遗留问题，没有设置�
     padding-left: 48px;
     margin-bottom: 34px;
 }
-.news .main1{
-    width: 1100px;
-    height: 354px;
+.news .mainBox{
     position: relative;
+    width: 1090px;
+    height: 354px;
+    overflow: hidden;
 }
-.news .main1 span.prev,.news .main1 span.next{
+.news .newListAll{
     position: absolute;
-    width: 41px;
-    height: 49px;
-    border-radius: 5px;
-    top: 155px;
-    font-size: 28px;
-    display: inline-block;
-    float: left;
+    width: 10000px;
+    height: 354px;
 }
-.news .main1 span.prev{
-    background: url("../img/left.png")no-repeat 0 0;
-    margin-right: 15px;
-    left: -50px;
-}
-.news .main1 span.next{
-    background: url("../img/right.png")no-repeat 0 0;
-    right: -30px;
-}
-.news .main1 a{
+
+.news .newListAll a{
     position: relative;
     display: block;
     float: left;
@@ -356,16 +364,16 @@ transition:2s; */                                 /*遗留问题，没有设置�
     text-align: center;
     color: #00aeff;
 }
-.news .main1 a .img{
+.news .newListAll a .img{
     height: 100%;
 }
-.news .main1 a .icon{
+.news .newListAll a .icon{
     position: absolute;
     left: 25px;
     bottom: 110px;
     height: 30px;
 }
-.news .main1 a .name{
+.news .newListAll a .name{
     color:#fff;
     bottom: 80px;
     font-size: 14px;
@@ -377,7 +385,7 @@ transition:2s; */                                 /*遗留问题，没有设置�
     float: left;
     margin-right: 15px;
 }
-.news .main1 a .desc{
+.news .newListAll a .desc{
     color:#ff8602;
     font-size: 12px;
     bottom: 55px;
@@ -389,7 +397,7 @@ transition:2s; */                                 /*遗留问题，没有设置�
     float: left;
     margin-right: 15px;
 }
-.news .main1 a .price{
+.news .newListAll a .price{
     color:
 #fff;
 font-size: 12px;
@@ -404,7 +412,499 @@ margin-right: 15px;
 }
 
 
+/*----------------居家生活 life--------------------*/
+.life{
+    margin-top: 60px;
+    height: 755px;
+}
+.life1{
+    position: relative;
+}
+.life .btns1 span{
+    position: absolute;
+    display: inline-block;
+    width: 41px;
+    height: 49px;
+    border-radius: 5px;
+    top: 540px;
+    font-size: 28px;
+    float: left;
+}
+.life .prev1{
+    background: url("../img/left.png")no-repeat 0 0;
+    left: -50px;
+}
+.life .next1{
+    background: url("../img/right.png")no-repeat 0 0;
+    right: -50px;
+}
+.life .lifeTitle .title{
+    float: left;
+    background: url("../img/lifetitle.png")no-repeat 0 0;
+    padding: 0;
+    font-size: 30px;
+    color: #ffffff;
+    padding-left: 48px;
+    margin-bottom: 34px;
+}
+.life .lifeTitle ul{
+    margin-left: 290px;
+    float: left;
+    margin-top: 8px;
+}
+.life .lifeTitle ul li{
+    float: left;
+}
+.life .lifeTitle ul li a{
+    font-size: 12px;
+    color: #738d9e;
+}
+.life .lifeTitle ul li i{
+    font-size: 12px;
+    color: #738d9e;
+    margin: 0 10px;
+}
+.life .lifeTitle .more{
+    float: right;
+    font-size: 12px;
+    color: #00aeff;
+    margin-top: 8px;
 
+}
+.life .lifeImg{
+    float: left;
+    width: 1090px;
+    height: 309px;
+    margin-top: 34px;
+}
+.life .lifeImg img{
+    width: 1090px;
+    height:  309px;
+}
+
+.life .lifeBox{
+    float: left;
+    width: 1090px;
+    height: 356px;
+    overflow: hidden;
+    margin-top: 24px;
+}
+.life .lifeListAll{
+    width: 10000px;
+    height: 356px;
+}
+.life .lifeListAll li{
+    float: left;
+    margin-right: 15px;
+    width: 260px;
+    height: 356px;
+    text-align: center;
+}
+.life .lifeListAll li .img{
+    width: 260px;
+    height: 258px;
+    background-color: rgba(74,93,127,.3);
+
+}
+.life .lifeListAll li .img img{
+    width: 230px;
+    height: 230px;
+}
+.life .lifeListAll li .desc{
+    margin-top: 25px;
+    font-size: 13px;
+    color: #acacac;
+}
+.life .lifeListAll li .price{
+    margin-top: 17px;
+    font-size: 13px;
+    color: #00aeff;
+}
+
+
+/*----------------手办模型   model--------------------*/
+.model{
+    margin-top: 100px;
+    height: 755px;
+}
+.model1{
+    position: relative;
+}
+.model .btns1 span{
+    position: absolute;
+    display: inline-block;
+    width: 41px;
+    height: 49px;
+    border-radius: 5px;
+    top: 540px;
+    font-size: 28px;
+    float: left;
+}
+.model .prev1{
+    background: url("../img/left.png")no-repeat 0 0;
+    left: -50px;
+}
+.model .next1{
+    background: url("../img/right.png")no-repeat 0 0;
+    right: -50px;
+}
+.model .modelTitle .title{
+    float: left;
+    background: url("../img/modeltitle.png")no-repeat 0 0;
+    padding: 0;
+    font-size: 30px;
+    color: #ffffff;
+    padding-left: 48px;
+    margin-bottom: 34px;
+}
+.model .modelTitle ul{
+    margin-left: 290px;
+    float: left;
+    margin-top: 8px;
+}
+.model .modelTitle ul li{
+    float: left;
+}
+.model .modelTitle ul li a{
+    font-size: 12px;
+    color: #738d9e;
+}
+.model .modelTitle ul li i{
+    font-size: 12px;
+    color: #738d9e;
+    margin: 0 10px;
+}
+.model .modelTitle .more{
+    float: right;
+    font-size: 12px;
+    color: #00aeff;
+    margin-top: 8px;
+
+}
+.model .modelImg{
+    float: left;
+    width: 1090px;
+    height: 309px;
+    margin-top: 34px;
+}
+.model .modelImg img{
+    width: 1090px;
+    height:  309px;
+}
+
+.model .modelBox{
+    float: left;
+    width: 1090px;
+    height: 356px;
+    overflow: hidden;
+    margin-top: 24px;
+}
+.model .modelListAll{
+    width: 10000px;
+    height: 356px;
+}
+.model .modelListAll li{
+    float: left;
+    margin-right: 15px;
+    width: 260px;
+    height: 356px;
+    text-align: center;
+}
+.model .modelListAll li .img{
+    width: 260px;
+    height: 258px;
+    background-color: rgba(74,93,127,.3);
+
+}
+.model .modelListAll li .img img{
+    width: 230px;
+    height: 230px;
+}
+.model .modelListAll li .desc{
+    margin-top: 25px;
+    font-size: 13px;
+    color: #acacac;
+}
+.model .modelListAll li .price{
+    margin-top: 17px;
+    font-size: 13px;
+    color: #00aeff;
+}
+
+
+
+/*----------------数码外设--------------------*/
+.shuma,
+.pei{
+    margin-top: 100px;
+    height: 755px;
+    // margin-bottom: 60px;
+}
+.shuma1,
+.pei1{
+    position: relative;
+}
+.shuma .btns1 span,
+.pei .btns1 span{
+    position: absolute;
+    display: inline-block;
+    width: 41px;
+    height: 49px;
+    border-radius: 5px;
+    top: 540px;
+    font-size: 28px;
+    float: left;
+}
+.shuma .prev1,
+.pei .prev1{
+    background: url("../img/left.png")no-repeat 0 0;
+    left: -50px;
+}
+.shuma .next1,
+.pei .next1{
+    background: url("../img/right.png")no-repeat 0 0;
+    right: -50px;
+}
+.shuma .shumaTitle .title{
+    float: left;
+    background: url("../img/shumatitle.png")no-repeat 0 0;
+    padding: 0;
+    font-size: 30px;
+    color: #ffffff;
+    padding-left: 48px;
+    margin-bottom: 34px;
+}
+.pei .peiTitle .title{
+    float: left;
+    background: url("../img/peititle.png")no-repeat 0 0;
+    padding: 0;
+    font-size: 30px;
+    color: #ffffff;
+    padding-left: 48px;
+    margin-bottom: 34px;
+}
+.shuma .shumaTitle ul,
+.pei .peiTitle ul
+{
+    margin-left: 290px;
+    float: left;
+    margin-top: 8px;
+}
+.shuma .shumaTitle ul li,
+.pei .peiTitle ul li
+{
+    float: left;
+}
+.shuma .shumaTitle ul li a,
+.pei .peiTitle ul li a{
+    font-size: 12px;
+    color: #738d9e;
+}
+.shuma .shumaTitle ul li i,
+.pei .peiTitle ul li i{
+    font-size: 12px;
+    color: #738d9e;
+    margin: 0 10px;
+}
+.shuma .shumaTitle .more,
+.pei .peiTitle .more{
+    float: right;
+    font-size: 12px;
+    color: #00aeff;
+    margin-top: 8px;
+
+}
+.shuma .shumaImg,
+.pei .peiImg{
+    float: left;
+    width: 1090px;
+    height: 309px;
+    margin-top: 34px;
+}
+.shuma .shumaImg img,
+.pei .peiImg img{
+    width: 1090px;
+    height:  309px;
+}
+
+.shuma .shumaBox,
+.pei .peiBox{
+    float: left;
+    width: 1090px;
+    height: 356px;
+    overflow: hidden;
+    margin-top: 24px;
+}
+.shuma .shumaListAll,
+.pei .peiListAll{
+    width: 10000px;
+    height: 356px;
+}
+.shuma .shumaListAll li,
+.pei .peiListAll li{
+    float: left;
+    margin-right: 15px;
+    width: 260px;
+    height: 356px;
+    text-align: center;
+}
+.shuma .shumaListAll li .img,
+.pei .peiListAll li .img{
+    width: 260px;
+    height: 258px;
+    background-color: rgba(74,93,127,.3);
+
+}
+.shuma .shumaListAll li .img img,
+.pei .peiListAll li .img img{
+    width: 230px;
+    height: 230px;
+}
+.shuma .shumaListAll li .desc,
+.pei .peiListAll li .desc{
+    margin-top: 25px;
+    font-size: 13px;
+    color: #acacac;
+}
+.shuma .shumaListAll li .price,
+.pei .peiListAll li .price{
+    margin-top: 17px;
+    font-size: 13px;
+    color: #00aeff;
+}
+
+
+
+/*----------------底部 服务-------------------*/
+.fuwu{
+    // margin-top: 121px;
+    overflow:hidden;
+    height: 325px;
+    margin-top: 150px;
+    
+}
+.fuwu1{
+    border-top:1px solid #244669;
+}
+.fuwu1 ul{
+    margin-top: 63px;
+}
+.fuwu1 ul li{
+    text-align: center;
+    float: left;
+    height: 200px;
+    // background-color: #33669b;
+}
+.fuwu1 ul .li1{
+    padding: 0 94px;
+    border-right:1px solid #244669 ;
+}
+.fuwu1 ul .li1 h3{
+    margin-top: 24px;
+    font-size: 12px;
+    color: #767676;
+    margin-bottom: 48px;
+}
+.fuwu1 ul .li1 .fuwu2 div{
+    float: left;
+    font-size: 11px;
+    color: #767676;
+}
+.fuwu1 ul .li1 .fuwu2 div:nth-of-type(1){
+    margin-right: 53px;
+}
+.fuwu1 ul .li1 .fuwu2 div img{
+    margin-bottom: 10px;
+}
+
+.fuwu1 ul .li2{
+    padding-left: 60px;
+    padding-right: 67px;
+    border-right:1px solid #244669 ;
+}
+.fuwu1 ul .li2 h3{
+    margin-top: 24px;
+    font-size: 12px;
+    color: #767676;
+    margin-bottom: 26px;
+}
+.fuwu1 ul .li2 p{
+    width: 252px;
+    font-size: 11px;
+    color: #767676;
+    line-height: 16px;
+    margin-bottom: 32px;
+}
+.fuwu1 ul .li2 div{
+    font-size: 11px;
+    color: #767676;
+}
+.fuwu1 ul .li2 div img{
+    height: 20px;
+}
+.fuwu1 ul .li2 div img:nth-of-type(1){
+    margin-left: 22px;
+    margin-right: 8px;
+}
+.fuwu1 ul .li3{
+    padding-left: 50px;
+}
+.fuwu1 ul .li3 div{
+    margin-top: 50px;
+}
+.fuwu1 ul .li3 div img:nth-of-type(1){
+    margin-right: 33px;
+}
+
+/*---------------底部 友情链接--------------------*/
+.foot{
+    overflow: hidden;
+    height: 300px;
+    background-color: #1a1a1a;
+}
+.foot1 .miaoshu{
+    margin: 80px 0 28px 75px;
+    overflow: hidden;
+}
+.foot1 .miaoshu li{
+    float: left;
+    line-height: 50px;
+    font-size: 15px;
+    color: #ffffff;
+    margin-right: 80px;
+
+}
+.foot1 .miaoshu li img{
+    height: 50px;
+    // float: left;
+    margin-right: 29px;
+}
+
+
+.foot1 .lianjie{
+    text-align: center;
+    border-top: 1px solid #2c2c2c;
+}
+.foot1 .lianjie ul:nth-of-type(1){
+    margin-top: 16px;
+    margin-left: 203px;
+}
+.foot1 .lianjie ul:nth-of-type(2){
+    float: left;
+    margin-top: 26px;
+    margin-left: 102px;
+}
+.foot1 .lianjie ul:nth-of-type(1) li,.foot1 .lianjie ul:nth-of-type(2) li{
+    float: left;
+}
+.foot1 .lianjie ul:nth-of-type(1) li a,.foot1 .lianjie ul:nth-of-type(1) li span,.foot1 .lianjie ul:nth-of-type(2) li a,.foot1 .lianjie ul:nth-of-type(2) li span{
+    font-size: 11px;
+    color: #a6a6a6;
+}
+.foot1 .lianjie ul:nth-of-type(1) li span,.foot1 .lianjie ul:nth-of-type(2) li span{
+    margin-left: 20px;
+    margin-right: 19px;
+}
 
 
 
